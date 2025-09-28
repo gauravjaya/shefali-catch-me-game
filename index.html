@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch Me If You Can - Shefali's Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Catch Me If You Can 💕</h1>
+    <p>Catch Gaurav before he escapes!</p>
+    <label>Your name: <input type="text" id="playerName" value="Shefali"></label><br>
+    <label>Difficulty:
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </label><br>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div id="game-ui" class="hidden">
+    <div id="hud">
+      <span id="score">Score: 0</span>
+      <span id="timer">Time: 60</span>
+      <button id="soundToggle">🔊</button>
+    </div>
+    <div id="game-area">
+      <img id="shefali" src="assets/shefali.png" class="avatar">
+      <img id="gaurav" src="assets/gaurav.png" class="avatar">
+    </div>
+    <div id="dialogue"></div>
+  </div>
+
+  <div id="end-screen" class="hidden">
+    <h2>Round Over!</h2>
+    <p id="final-stats"></p>
+    <button id="restartBtn">Play Again</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
